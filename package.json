@@ -1,20 +1,27 @@
 {
   "name": "rest-builder",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple REST client inspired by Discord.js' Client#api.",
-  "main": "index.js",
   "repository": "https://github.com/Ciach0/rest-builder",
   "author": "Ciach0_",
   "license": "GPL-3.0",
   "private": false,
   "types": "dist/RESTBuilder.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/RESTBuilder.mjs",
+      "require": "./dist/RESTBuilder.cjs"
+    }
+  },
   "devDependencies": {
     "prettier": "^2.7.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "unbuild": "^1.0.2"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "unbuild"
   },
   "dependencies": {
     "axios": "^0.27.2"
