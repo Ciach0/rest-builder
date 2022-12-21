@@ -1,11 +1,12 @@
 {
   "name": "rest-builder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple REST client inspired by Discord.js' Client#api.",
   "repository": "https://github.com/Ciach0/rest-builder",
   "author": "Ciach0_",
   "license": "GPL-3.0",
   "private": false,
+  "main": "dist/RESTBuilder.cjs",
   "types": "dist/RESTBuilder.d.ts",
   "type": "module",
   "exports": {
